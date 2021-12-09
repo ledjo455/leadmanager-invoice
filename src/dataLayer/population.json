@@ -1,0 +1,20 @@
+[
+  { "date": "11/21/2021", "type": "Credit Card Expense", "amount": "$34.00" },
+  { "date": "11/10/2020", "type": "Credit Card Credit", "amount": "$74.00" },
+  { "date": "11/10/2022", "type": "Credit Card Expense", "amount": "$99.00" },
+  { "date": "11/10/2020", "type": "Credit Card Expense", "amount": "$900.00" },
+  { "date": "11/10/2021", "type": "Cash Expense", "amount": "$7764.00" },
+  { "date": "10/30/2021", "type": "Payment", "amount": "$3465.00" },
+  { "date": "11/10/2021", "type": "Expense", "amount": "$3445.00" },
+  {
+    "date": "10/27/2021",
+    "type": "Bill Payment (Credit Card)",
+    "amount": "$37674.00"
+  },
+  {
+    "date": "10/27/2021",
+    "type": "Inventory Qty Adjust",
+    "amount": "$36784.00"
+  },
+  { "date": "10/27/2021", "type": "Debit Card", "amount": "$3468.00" }
+]

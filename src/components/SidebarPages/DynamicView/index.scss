@@ -1,0 +1,22 @@
+@import "../../../config.scss";
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #1264a3;
+  --unselectedColor: #6f7782;
+}
+
+.dynamicViewPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: var(--header-height-px);
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  background-color: var(--primaryColor);
+}
+
+@media all and (min-width: 350px) and (max-width: 1000px) {
+  .dynamicViewPage {
+    margin-left: 0%;
+  }
+}

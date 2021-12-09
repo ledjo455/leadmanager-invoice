@@ -1,0 +1,251 @@
+.accountingTab {
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  // width: 100%;
+  .tabItem {
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+    .tabItemLabel {
+      color: #1f2a44 !important;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+  .tabItemSelected {
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #1f2a44;
+    margin: 5px;
+    cursor: pointer;
+    .tabItemLabel {
+      color: white !important;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+
+.table_container {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: black;
+  top: 265px;
+  left: 271px;
+  width: 1259px;
+  height: 669px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 4px #00000029;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.cards {
+  margin-top: -660px;
+  margin-left: 1309px;
+  .side_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 265px;
+    left: 1549px;
+    width: 351px;
+    height: 70px;
+    margin-bottom: 20px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 4px #00000029;
+    border-radius: 20px;
+    opacity: 1;
+
+    .side_card_location_label {
+      text-align: left;
+      font: normal normal bold 16px/22px Open Sans;
+      letter-spacing: 0px;
+      color: #323338;
+      opacity: 1;
+    }
+
+    .transformed-invoice-label {
+      background-color: red;
+    }
+
+    .side_card_options {
+      padding-left: 20px;
+    }
+
+    .star_icon {
+      margin-right: 30px;
+      font-size: "39px";
+      background: #1264a3 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      opacity: 1;
+      color: white;
+      padding: 5px;
+    }
+
+    .wifi_icon {
+      margin-right: 30px;
+      background: #1264a3 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      opacity: 1;
+      color: white;
+      padding: 5px;
+    }
+
+    .add_btn {
+      height: 32px;
+      background: #71cf48 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      border: #71cf48;
+      opacity: 1;
+      color: white;
+
+      &:hover {
+        background: rgb(107, 192, 2) 0% 0% no-repeat padding-box;
+        cursor: pointer !important;
+      }
+    }
+
+    .plus_icon {
+      border-left: 2px solid white;
+      margin-left: 4px;
+    }
+
+    .question_icon {
+      // margin-right: 30px;
+      background: #1264a3 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      opacity: 1;
+      color: white;
+      padding: 5px;
+    }
+
+    .cost_label {
+      font: normal normal bold 34px/46px Open Sans;
+      letter-spacing: 0px;
+      color: #323338;
+      opacity: 1;
+      margin-top: 13px;
+    }
+
+    .billed_label {
+      font: normal normal normal 16px/22px Open Sans;
+      letter-spacing: 0px;
+      color: #323338;
+      opacity: 1;
+      margin-top: 13px;
+      // margin-left: 10px;
+    }
+  }
+
+  .transformed-invoice-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 265px;
+    left: 1549px;
+    width: 351px;
+    height: 70px;
+    margin-bottom: 20px;
+    background: #864949 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 4px #00000029;
+    border-radius: 20px;
+    opacity: 1;
+    background: #1264a3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 4px #00000029;
+    border-radius: 20px;
+    opacity: 1;
+    .side_card_location_label {
+      color: white;
+    }
+  }
+}
+
+.invoice-modal {
+  top: 80% !important;
+  border-radius: 20px !important;
+  border-radius: 24px;
+
+  .ant-modal-content {
+    border-radius: 20px !important;
+    width: 680px;
+    height: 78px;
+
+    .ant-modal-close-x {
+      background-color: rgb(255, 255, 255);
+      height: 78px;
+      width: 80px;
+      border-radius: 0px 20px 20px 0px;
+      padding-top: 10px;
+      font-size: 40px;
+      border-left: 1px solid #d1d1d1;
+
+      &:hover {
+        background-color: #fe4c4a;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal-items {
+  display: flex;
+  justify-content: start;
+  .selected-card {
+    margin-top: -23px;
+    margin-left: -23.5px;
+    width: 78px;
+    height: 78px;
+    background: #1264a3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      width: 100%;
+      color: white;
+    }
+  }
+
+  .selected-label {
+    margin-left: 30px;
+  }
+  .btns {
+    display: flex;
+    gap: 20px;
+    margin-left: 150px;
+    .btn_and_label {
+      // margin-left: 200px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.ant-modal-mask {
+  background: transparent;
+  pointer-events: none;
+}
+.ant-modal-wrap {
+  pointer-events: none;
+}
+.ant-modal {
+  pointer-events: all;
+}

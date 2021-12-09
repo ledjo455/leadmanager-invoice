@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,600,700);
+
+body {
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a:hover {
+  text-decoration: none;
+}
+//SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f2a44;
+  border-radius: 5px;
+  &:hover {
+    background-color: #35415e;
+  }
+}
+
+// .ag-center-cols-viewport {
+//   overflow-x: hidden !important;
+// }
+
+.pad-0-20 {
+  padding: 0 20px;
+}
+
+.ft-30 {
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+@mixin textEllipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin text(
+  $font-size,
+  $font-weight,
+  $letter-spacing,
+  $color,
+  $text-transform: none,
+  $opacity: 1,
+  $important: false
+) {
+  @if $important == true {
+    font-size: $font-size !important;
+    font-weight: $font-weight !important;
+    opacity: $opacity !important;
+    text-transform: $text-transform !important;
+    letter-spacing: $letter-spacing !important;
+    color: $color !important;
+  }
+  @if $important == false {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    opacity: $opacity;
+    text-transform: $text-transform;
+    letter-spacing: $letter-spacing;
+    color: $color;
+  }
+}
+
+@mixin flex($align-items, $justify-content, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin square($width, $height, $radius, $background: #fff, $opacity: 1) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  opacity: $opacity;
+  background-color: $background;
+}
+
+@mixin circle($size, $color, $opacity: 1) {
+  @include square($size, $size, 50%, $color, $opacity);
+}
+
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+}
+
+@mixin absolute(
+  $top: unset,
+  $right: unset,
+  $bottom: unset,
+  $left: unset,
+  $position: absolute
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin mondayButton($backgroundColor, $hoverColor, $textColor: #fff) {
+  background-color: $backgroundColor !important;
+  color: $textColor !important;
+
+  .mondayButtonDivider {
+    background-color: $hoverColor !important;
+  }
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    background-color: $hoverColor !important;
+    color: $textColor;
+
+    .mondayButtonDivider {
+      background-color: $backgroundColor !important;
+    }
+  }
+}
+
+.ant-tabs-ink-bar {
+  z-index: 0;
+}

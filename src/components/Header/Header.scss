@@ -1,0 +1,453 @@
+@import "../../config.scss";
+
+.title-header-comp {
+  height: var(--header-height-px);
+  display: inline-block;
+  width: calc(100% - var(--sidebar-width-px));
+  position: fixed;
+  background-color: var(--secondary-background-color);
+  top: 0;
+  right: 0;
+  z-index: 3;
+  .left-title-header-comp {
+    float: left;
+    .text-left-title-header-comp {
+      font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-17) /
+        var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      text-align: left;
+      font: normal normal bold 17px/20px Helvetica;
+      letter-spacing: 0px;
+      color: #1f2a44;
+      opacity: 1;
+    }
+  }
+
+  .right-title-header-comp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+    height: 70px;
+    .SearchLogoIcon {
+      position: relative;
+      right: 290px;
+      opacity: 0.5;
+    }
+    .search-comp {
+      margin-top: 2px;
+      .ant-select-selector {
+        padding-left: 30px;
+        height: 30px;
+        width: 300px;
+        background: #f5f5f5 0% 0% no-repeat padding-box;
+        border: 0.20000000298023224px solid #9ea1a5;
+        border-radius: 8px;
+        opacity: 0.34;
+        .ant-select-selection-search-input {
+          padding-left: 20px;
+        }
+      }
+
+      .ant-select {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: "100%";
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        list-style: none;
+        font-feature-settings: "tnum", "tnum";
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 2;
+      }
+    }
+    .companyComponent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 25px;
+      .ant-select-selector {
+        background-color: #f5f5f5 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        width: 300px;
+        min-width: 300px;
+        height: 30px;
+        border: 0px;
+        padding: 0px;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+      .ant-select-arrow {
+        margin-top: -3px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-radius: 8px;
+        border-top: 7px solid white;
+        z-index: 3;
+      }
+      .ant-select-suffix {
+        display: none;
+      }
+      .ant-select {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        width: 300px;
+        color: transparent;
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        list-style: none;
+        font-feature-settings: "tnum", "tnum";
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 2;
+      }
+      .ant-select-selection-item {
+        color: transparent;
+        z-index: 3;
+      }
+    }
+
+    .ant-badge-count {
+      cursor: pointer;
+      z-index: auto;
+      min-width: 22px;
+      height: 22px;
+      padding: 0px 0px;
+      color: #fff;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 20px;
+      background: #ff4d4f;
+      border-radius: 100px;
+      box-shadow: 0 0 0 1px #fff;
+    }
+    .ant-scroll-number-only > p.ant-scroll-number-only-unit {
+      height: 20px;
+      font-size: 12px;
+      margin-top: -1px;
+    }
+    .search-Div {
+      display: flex;
+      align-items: center;
+    }
+
+    .calendarStyle {
+      cursor: pointer;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: 25px;
+      margin-left: 30px;
+      height: 30px;
+      width: 30px;
+      border-radius: 100px;
+    }
+    .searchButton {
+      margin-left: 15px;
+      margin-right: -5px;
+      display: flex;
+      align-items: center;
+      height: 75px;
+      width: 30px;
+      cursor: pointer;
+      color: #1f2a44;
+    }
+    .timerIconStyle {
+      margin-left: 15px;
+      margin-right: -5px;
+      display: flex;
+      align-items: center;
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+    }
+    .userLatterContainer {
+      background-color: #ca4739;
+      cursor: pointer;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      height: 30px;
+      width: 30px;
+      border-radius: 100px;
+    }
+    .logOutStyle {
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+    }
+    .settingsStyle {
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      height: 25px;
+      width: 25px;
+    }
+    .notificationStyle {
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      height: 25px;
+      width: 25px;
+    }
+    .notifcationIconStyle {
+      height: 25px;
+      width: 25px;
+    }
+    .userLetter {
+      margin-top: -2px;
+      font: normal normal bold 30px Open Sans;
+      letter-spacing: 0.28px;
+      color: #ffffff;
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+}
+.search-dropDown {
+  .ant-select-item-group {
+    color: black;
+    font-size: 12px;
+    cursor: #eaebec;
+    background-color: #eaebec;
+    opacity: 0.9;
+    padding-left: 45px;
+    margin-bottom: -10px;
+  }
+  .ant-select-item-option-grouped {
+    padding-left: 12px;
+    background-color: #eaebec;
+    opacity: 0.9;
+    margin-bottom: 3px;
+  }
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background-color: #eaebec;
+    opacity: 0.9;
+  }
+  .ant-select-item-option-content {
+    flex: auto;
+    overflow: visible;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .rc-virtual-list-scrollbar-thumb {
+    background: #202a45 !important;
+  }
+  border-radius: 7px;
+}
+.dropdownLogo {
+  margin-left: 10px;
+  width: 60px;
+  height: 25px;
+  filter: brightness(10);
+}
+.companyOptionStyle {
+  padding: 0px !important;
+  width: 300px;
+  padding-bottom: 3px;
+  background-color: transparent;
+}
+
+.loggedOnActiveTasks {
+  @mixin inner_actions {
+    width: auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-right: 5px;
+    border-radius: 12px;
+  }
+  .ant-popover-title {
+    padding: 10px 20px !important;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .ant-popover-inner {
+    border-radius: 16px;
+    overflow: hidden;
+    height: auto;
+    max-height: 365px;
+    overflow: auto;
+  }
+  .ant-popover-inner-content {
+    padding: 0 !important;
+    background-color: #fff;
+  }
+  .loggedIn_task {
+    padding: 0 20px;
+    height: 46px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2f5fa;
+    margin-top: 8px !important;
+    &:first-child {
+      margin-top: 0 !important;
+    }
+    h6 {
+      margin-bottom: 0;
+      width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 0.95rem;
+      color: #323338;
+    }
+    .timer {
+      @include inner_actions;
+      background-color: #33b661;
+      div {
+        border-right: 1px solid #68c142;
+        padding: 3px 10px;
+        margin-right: 5px;
+      }
+      svg {
+        height: 20px;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .stop_timer {
+      @include inner_actions;
+      margin-left: 10px;
+      padding-right: 10px;
+      background-color: #ff4d4f;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(1.25);
+        transition: 0.3s;
+      }
+      h5 {
+        border-right: 1px solid #eb4345;
+        padding: 5px 10px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.no_logged_tasks {
+  padding: 20px 60px 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  h2 {
+    color: #1f2a44;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+  h5 {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+  }
+  .mondayButtonContainer {
+    .go-tasks-btn {
+      background: #1264a3;
+      border-radius: 8px;
+      .mondayButtonDivider {
+        background: #0f5c97;
+      }
+      &:hover {
+        color: #fff;
+        filter: brightness(1.3);
+        transition: 0.3s;
+      }
+      &:focus {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 650px) and (max-width: 1280px) {
+  .title-header-comp {
+    .right-title-header-comp {
+      .companyComponent {
+        display: none;
+      }
+      .search-Div {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 350px) and (max-width: 649px) {
+  .title-header-comp {
+    .right-title-header-comp {
+      .companyComponent {
+        display: none;
+      }
+      .search-Div {
+        display: none;
+      }
+
+      // for icons
+      .calendarStyle {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .searchButton {
+        display: none;
+      }
+      .timerIconStyle {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .userLatterContainer {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .logOutStyle {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .settingsStyle {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .notificationStyle {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .notifcationIconStyle {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .userLetter {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 350px) and (max-width: 1000px) {
+  // .title-header-comp {
+  //   position: relative;
+  // }
+}

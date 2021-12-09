@@ -1,0 +1,18 @@
+.headerSearchOverlay .ant-menu-item {
+  height: auto !important;
+  .searchResult {
+    border-bottom: solid 1px #d7d7d7 !important;
+    .searchValue {
+      font-size: 16px !important;
+      line-height: normal !important;
+      margin-bottom: 5px !important;
+    }
+    .searchContext {
+      font-size: 12px !important;
+      line-height: normal !important;
+      margin-bottom: 7px !important;
+    }
+  }
+}
+
+

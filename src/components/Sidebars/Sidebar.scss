@@ -1,0 +1,376 @@
+@import "../../index.scss";
+.sidebarContainer {
+  background-color: #1f2a44;
+  width: 250px;
+  background-size: cover;
+  overflow: "auto";
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+
+  .ant-menu-vertical {
+    border: 0;
+  }
+  .add-button {
+    width: 122px;
+    height: 34px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #35415e;
+    }
+  }
+  .add-button-text {
+    text-align: left;
+    font: normal normal 500 21px/28px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .pageIcon {
+    fill: #fff;
+    width: 31px;
+    opacity: 1;
+  }
+
+  .sidebarCompanyLogo {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    width: 180px;
+    height: 90px;
+    filter: brightness(10);
+  }
+
+  .pageContainer {
+    @include flex(center, flex-start);
+    padding-bottom: 50px;
+  }
+
+  .centeredItem {
+    @include flex(center, center);
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    .ant-menu-vertical .ant-menu-item,
+    .ant-menu-vertical-left .ant-menu-item,
+    .ant-menu-vertical-right .ant-menu-item,
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-submenu-title,
+    .ant-menu-vertical-left .ant-menu-submenu-title,
+    .ant-menu-vertical-right .ant-menu-submenu-title,
+    .ant-menu-inline .ant-menu-submenu-title {
+      height: 38px;
+      margin-top: 0px;
+      margin-bottom: 7px;
+      overflow: hidden;
+
+      line-height: 33px;
+      text-overflow: ellipsis;
+    }
+    .ant-menu {
+      box-sizing: border-box;
+      margin: 0;
+
+      padding: 0;
+      font-variant: tabular-nums;
+      line-height: 1.5715;
+      font-feature-settings: "tnum", "tnum";
+      margin-bottom: 0;
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 0;
+      text-align: left;
+      list-style: none;
+      outline: none;
+      transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+
+      .ant-menu-inline,
+      .ant-menu-vertical,
+      .ant-menu-vertical-left {
+        border-right: 0px solid #f0f0f0;
+      }
+      .ant-menu-item {
+        padding-left: 30px;
+      }
+      .ant-menu-item-selected {
+        background-color: #4c5569 !important;
+        color: #fff;
+      }
+      .ant-menu-vertical .ant-menu-item:not(:last-child),
+      .ant-menu-vertical-left .ant-menu-item:not(:last-child),
+      .ant-menu-vertical-right .ant-menu-item:not(:last-child),
+      .ant-menu-inline .ant-menu-item:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: #4c5569 !important;
+      }
+
+      .ant-menu-item:hover,
+      .ant-menu-item-active,
+      .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+      .ant-menu-submenu-active,
+      .ant-menu-submenu-title:hover {
+        color: #fff;
+        background-color: #4c5569 !important;
+      }
+      .ant-menu-item-selected::after {
+        position: relative;
+        top: -82px;
+        right: -210px;
+        bottom: 2px;
+        font-size: 38px;
+        border-right: 10px solid white;
+        transform: scaleY(0.0001);
+        opacity: 1;
+        transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+          opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+        content: "";
+      }
+    }
+  }
+}
+
+.Collapse {
+  margin-top: 50px;
+  color: white;
+  padding-left: 90px;
+  &:hover {
+    color: #1f2a44;
+    cursor: pointer;
+  }
+}
+
+.sidebar__collapse {
+  background-color: transparent;
+  width: 230px;
+  height: 10px;
+  background-size: cover;
+  overflow: "auto";
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-top: 30%;
+  transition: all 1s;
+  .ant-menu-vertical {
+    border: 0;
+  }
+  .add-button {
+    width: 122px;
+    height: 34px;
+    background-color: transparent;
+    border: 1px solid #4e12da;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #35415e;
+    }
+  }
+  .add-button-text {
+    text-align: left;
+    font: normal normal 500 21px/28px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .pageIcon {
+    fill: #1f2a44; // background-color: #1f2a44;
+    // border: 3px solid rgb(0, 0, 0) 8d;
+    // border-radius: 6px;
+    width: 51px;
+    height: 35px;
+    opacity: 1;
+
+    &:hover {
+      fill: white;
+    }
+  }
+
+  .sidebarCompanyLogo {
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+
+  .pageContainer {
+    @include flex(center, flex-start);
+    padding-bottom: 50px;
+    padding-left: -40px;
+  }
+
+  .centeredItem {
+    @include flex(center, center);
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    .ant-menu-vertical .ant-menu-item,
+    .ant-menu-vertical-left .ant-menu-item,
+    .ant-menu-vertical-right .ant-menu-item,
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-submenu-title,
+    .ant-menu-vertical-left .ant-menu-submenu-title,
+    .ant-menu-vertical-right .ant-menu-submenu-title,
+    .ant-menu-inline .ant-menu-submenu-title {
+      height: 38px;
+      margin-top: 0px;
+      margin-bottom: 7px;
+      overflow: hidden;
+      line-height: 33px;
+      text-overflow: ellipsis;
+    }
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border-right: 0px solid #f0f0f0;
+    }
+    .ant-menu-item {
+      padding-left: 30px;
+      border-radius: 30px;
+    }
+    .ant-menu-item-selected {
+      background-color: #4c5569 !important;
+      color: #fff;
+      border-radius: 30px;
+    }
+    .ant-menu-vertical .ant-menu-item:not(:last-child),
+    .ant-menu-vertical-left .ant-menu-item:not(:last-child),
+    .ant-menu-vertical-right .ant-menu-item:not(:last-child),
+    .ant-menu-inline .ant-menu-item:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: #4c5569 !important;
+      border-radius: 30px;
+      .icon_label {
+        display: block;
+        color: rgb(167, 0, 0);
+        font-weight: bold;
+      }
+
+      .pageIcon {
+        fill: #fff;
+        width: 31px;
+        opacity: 1;
+      }
+    }
+    .pageContainer {
+      .icon_label {
+        display: none;
+        font-size: 12px;
+      }
+      &:hover {
+        .icon_label {
+          display: block;
+          color: rgb(167, 0, 0);
+          font-size: 12px;
+        }
+      }
+    }
+
+    .ant-menu-item:hover,
+    .ant-menu-item-active,
+    .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+    .ant-menu-submenu-active,
+    .ant-menu-submenu-title:hover {
+      color: #fff;
+      background-color: #4c5569 !important;
+      border-radius: 90px;
+      font-weight: bold;
+      .pageIcon {
+        fill: #fff;
+        width: 31px;
+        opacity: 1;
+      }
+    }
+  }
+
+  .ant-menu-item-selected::after {
+    position: relative;
+    border-radius: 90px;
+    top: -82px;
+    right: -210px;
+    bottom: 2px;
+    font-size: 38px;
+    border-right: 10px solid white;
+    transform: scaleY(0.0001);
+    opacity: 1;
+    transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    content: "";
+    background-color: turquoise;
+  }
+
+  .Collapse {
+    margin-top: 50px;
+    color: rgb(167, 0, 0);
+    padding-left: 12px;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.Collapse {
+  margin-top: 50px;
+  color: white;
+  padding-left: 90px;
+  &:hover {
+    color: #efd28d;
+    cursor: pointer;
+  }
+}
+
+@media all and (min-width: 350px) and (max-width: 649px) {
+  .sidebar__collapse {
+    display: none;
+  }
+
+  // .dynamicViewPage {
+  //   margin-left: 20%;
+  // }
+  .ant-menu {
+    display: none;
+  }
+}
+
+@media all and (min-width: 649px) and (max-width: 750px) {
+  // .dynamicViewPage {
+  //   margin-left: 20%;
+  // }
+
+  // .sidebarContainer {
+  //   background-color: #1f2a44;
+  //   width: 50px;
+  // }
+}

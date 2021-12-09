@@ -1,0 +1,40 @@
+.accountingTab {
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  // width: 100%;
+  .tabItem {
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+    .tabItemLabel {
+      color: #1f2a44 !important;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+  .tabItemSelected {
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #1f2a44;
+    margin: 5px;
+    cursor: pointer;
+    .tabItemLabel {
+      color: white !important;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}

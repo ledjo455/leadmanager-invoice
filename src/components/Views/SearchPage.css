@@ -1,0 +1,136 @@
+.filterView {
+  /* border: solid 3px black; */
+  padding-left: 250px;
+}
+
+.filter_labels {
+  padding-left: 145px;
+  color: rgb(0, 0, 0);
+}
+
+.filter_labels > h3 {
+  margin-top: -20px;
+}
+
+.date_filter__button {
+  background-color: white;
+  margin-left: 145px;
+  border-radius: 90px;
+  width: 140px;
+  height: 39px;
+}
+
+.MuiModal-root {
+  margin-right: 700px;
+  margin-bottom: 280px;
+  border: none;
+}
+
+.modalFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.date_range {
+  margin-top: 36px;
+  margin-left: 33px;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resetBtn {
+  border: 1px solid #6d6c6a;
+  border-radius: 70px;
+  background-color: white;
+  width: 70px;
+}
+
+.resetBtn:hover {
+  border: 2px solid #6d6c6a;
+  cursor: pointer;
+}
+
+.applyBtn {
+  border: 1px solid #6d6c6a;
+  border-radius: 70px;
+  background-color: rgb(43, 185, 0);
+  width: 70px;
+  height: 35px;
+  color: white;
+}
+
+.applyBtn:hover {
+  background-color: rgb(30, 128, 0);
+
+  cursor: pointer;
+}
+
+.date_helper_text {
+  margin-left: 300px;
+  margin-top: -33px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.date_helper_text > p {
+  align-content: center;
+}
+
+/* @media (max-width: 1400px) {
+  table {
+    background-color: aqua;
+  }
+} */
+
+.ag-theme-alpine {
+  height: 700px;
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+@media (max-width: 1400px) {
+  .ag-theme-alpine {
+    /* use theme parameters where possible */
+
+    width: 40%;
+    margin-left: 40%;
+  }
+}
+
+.export_options {
+  display: flex;
+  margin-top: -1.6%;
+  margin-left: 80%;
+  margin-right: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  gap: 8px;
+  color: rgb(70, 64, 64);
+}
+
+.print:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.share:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.settings:hover {
+  color: black;
+  cursor: pointer;
+}

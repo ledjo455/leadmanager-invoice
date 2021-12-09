@@ -1,0 +1,188 @@
+/* ROW SELECTION */
+#grid-theme-wrapper.red-theme .ag-theme-alpine .ag-row-selected {
+  background: #d5d6d6 0% 0% no-repeat padding-box;
+}
+#grid-theme-wrapper.red-theme .ag-theme-alpine .ag-row-drag,
+.ag-theme-alpine .ag-selection-checkbox,
+.ag-theme-alpine .ag-group-expanded,
+.ag-theme-alpine .ag-group-contracted {
+  color: #ff0000;
+  color: var(
+    --ag-secondary-foreground-color,
+    var(--ag-foreground-color, #ff0000)
+  );
+}
+.ag-theme-alpine .ag-ltr .ag-row-drag,
+.ag-theme-alpine .ag-ltr .ag-selection-checkbox,
+.ag-theme-alpine .ag-ltr .ag-group-expanded,
+.ag-theme-alpine .ag-ltr .ag-group-contracted {
+  margin-right: 2px;
+}
+
+.ag-theme-alpine .ag-rtl .ag-row-drag,
+.ag-theme-alpine .ag-rtl .ag-selection-checkbox,
+.ag-theme-alpine .ag-rtl .ag-group-expanded,
+.ag-theme-alpine .ag-rtl .ag-group-contracted {
+  margin-left: 12px;
+}
+
+.ag-theme-alpine .ag-cell,
+.ag-theme-alpine .ag-full-width-row .ag-cell-wrapper.ag-row-group {
+  border: 0px;
+  line-height: 40px;
+  padding-left: 17px;
+  padding-right: 17px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.ag-theme-alpine .ag-column-drop-cell {
+  background: rgb(151, 255, 31);
+  background: var(--ag-chip-background-color, rgb(255, 139, 139));
+  border-radius: 24px;
+  height: 24px;
+  padding: 0 3px;
+}
+
+.ag-theme-alpine .ag-column-drop-horizontal {
+  /* background-color: #15ff28;
+  background-color: var(--ag-control-panel-background-color, #0dff49); */
+  color: #181d1f;
+  color: var(
+    --ag-secondary-foreground-color,
+    var(--ag-foreground-color, #181d1f)
+  );
+  height: 42px;
+  border: 0px;
+  border-bottom-color: #babfc700;
+  border-bottom-color: var(--ag-border-color, #babfc7);
+  margin-bottom: 40px;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  border: 0px;
+  border-color: #babfc7;
+  border-color: var(--ag-border-color, #babfc7);
+}
+.ag-theme-alpine .ag-paging-panel {
+  border-top: 6px;
+  border-top-color: #babfc7;
+  border-top-color: var(--ag-border-color, #babfc7);
+  color: #181d1f;
+  color: var(
+    --ag-secondary-foreground-color,
+    var(--ag-foreground-color, #181d1f)
+  );
+  height: 48px;
+  display: flex;
+  margin-right: 120px !important;
+}
+
+.ag-theme-alpine .ag-header-row {
+  color: #181d1f;
+  color: var(
+    --ag-header-foreground-color,
+    var(--ag-secondary-foreground-color, var(--ag-foreground-color, #181d1f))
+  );
+  background-color: white;
+  margin-bottom: 10px;
+  border-right: 1px solid black;
+  height: 28px;
+}
+
+.ag-theme-alpine .ag-header {
+  background-color: #f8f8f8;
+  background-color: var(--ag-header-background-color, #f8f8f8);
+  border-bottom: 0px;
+  border-bottom-color: #babfc7;
+  border-bottom-color: var(--ag-border-color, #babfc7);
+  margin-bottom: 30px;
+}
+
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine .ag-header-group-cell {
+  padding-left: 18px;
+  padding-right: 18px;
+  border-right: 1px solid black;
+}
+
+.ag-theme-alpine .ag-row-odd {
+  border: 0px;
+  background-color: #e8e8f3;
+}
+
+.ag-theme-alpine .ag-row-even {
+  border: 0px;
+  background-color: #e8e8f3;
+}
+
+.ag-theme-alpine .ag-cell {
+  border-top: 6px solid white;
+  border-left: 6px solid white;
+}
+
+.ag-theme-alpine .ag-checkbox-input-wrapper {
+  font-family: "agGridAlpine";
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(0, 0, 0) !important;
+  background-color: var(
+    --ag-checkbox-background-color,
+    rgb(255, 255, 255)
+  ) !important;
+
+  /* background-color: red; */
+  /* border-radius: 3px; */
+  display: inline-block;
+  vertical-align: middle;
+  flex: none;
+  color: red;
+}
+
+.ag-theme-alpine .ag-checkbox-input-wrapper.ag-checked::after {
+  content: "\f106";
+
+  color: var(
+    --ag-checkbox-checked-color,
+    var(--ag-alpine-active-color, #ffffff)
+  );
+  background-color: rgb(0, 26, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* .ag-selection-checkbox {
+  border: 20px;
+  background-color: #1264a3;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  margin-left: -20px !important;
+  margin-right: 10px !important;
+} */
+
+.ag-selection-checkbox {
+  border: 20px;
+  background-color: #1264a3;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  margin-left: -20px !important;
+  margin-right: 10px !important;
+}
+
+.ag-paging-helper {
+  color: red;
+  margin-left: 1070px;
+  margin-top: -55px;
+}

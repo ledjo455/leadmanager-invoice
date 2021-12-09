@@ -1,0 +1,52 @@
+@media print {
+  html,
+  body {
+    height: auto;
+  }
+
+  * {
+    margin: 10px 10px 10px 10px !important;
+  }
+  .print_page {
+    margin-left: -39px !important;
+  }
+  th {
+    background-color: #ddefef;
+    border: solid 1px #ddeeee;
+    color: #336b6b;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+  }
+}
+
+.print_page > table {
+  border: solid 1px #ddeeee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  width: 1000px;
+  margin-left: 23%;
+  margin-top: 13%;
+}
+
+th {
+  background-color: #ddefef;
+  border: solid 1px #ddeeee;
+  color: #336b6b;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+td {
+  border: solid 1px #ddeeee;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
